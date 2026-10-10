@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" /
+
+    <!-- favicon -->
+
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <title>Krysha - Craft Shop Assistant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Quicksand & Outfit -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+    <style data-purpose="custom-typography">
+      body {
+        font-family: 'Outfit', sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      .brand-font {
+        font-family: 'Quicksand', sans-serif;
+      }
+    </style>
+    <style data-purpose="theme-styles">
+      /* Subtle paper/linen craft texture sensation & smooth styling */
+      .craft-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .craft-card:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body class="bg-[#FBF8F2] text-[#4A3B32] antialiased selection:bg-[#F3C99F] selection:text-[#3B2C24]">
+    <!-- BEGIN: NavigationBar -->
+    <header class="sticky top-0 z-50 bg-[#FBF8F2]/90 backdrop-blur-md border-b border-[#EADCC9]">
+      <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- Brand Logo / Name -->
+        <a class="brand-font text-2xl font-bold tracking-tight text-[#8B4513] hover:text-[#A75D28] transition-colors" href="#">
+          <!-- EDIT: NAVBAR_BRAND --> Craft Shop Assistant
+        </a>
+        <!-- Primary Navigation Links -->
+        <nav class="flex items-center space-x-6 sm:space-x-8 text-sm sm:text-base font-semibold text-[#665449]">
+          <a class="hover:text-[#C86D51] transition-colors" href="#about">About</a>
+          <a class="hover:text-[#C86D51] transition-colors" href="#projects">Projects</a>
+          <a class="hover:text-[#C86D51] transition-colors" href="#skills">Skills/Tools</a>
+          <a class="hover:text-[#C86D51] transition-colors" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- END: NavigationBar -->
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-20 space-y-24 md:space-y-32">
+      <!-- BEGIN: HeroSection -->
+      <section class="flex flex-col md:flex-row items-center gap-10 lg:gap-16 pt-4">
+        <!-- Portrait Image Container -->
+        <div class="w-full sm:w-72 md:w-80 lg:w-96 flex-shrink-0">
+          <div class="w-full aspect-[4/5] rounded-3xl overflow-hidden border-4 border-[#F2E3D0] shadow-[0_12px_28px_rgba(139,69,19,0.08)] bg-[#EFE3D3]">
+            <img alt="Portrait of Craft Shop Assistant" class="w-full h-full object-cover" src="./profile.png" />
+          </div>
+        </div>
+        <!-- Introduction Details -->
+        <div class="flex-1 text-center md:text-left space-y-5">
+          <div class="space-y-2">
+            <!-- EDIT: YOUR_NAME -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#3B2C24]"> Krysha Lyn Alutaya De Juan </h1>
+            <!-- EDIT: YOUR_JOB_TITLE -->
+            <h2 class="text-2xl sm:text-3xl font-semibold text-[#C86D51]"> Craft Shop Assistant </h2>
+          </div>
+          <!-- EDIT: SHORT_INTRODUCTION -->
+          <p class="text-lg text-[#6B5A4E] leading-relaxed max-w-xl mx-auto md:mx-0"> Offers friendly customer service, craft supply guidance, product organization, and support for creative DIY and handmade projects. </p>
+          <!-- Action Links -->
+          <div class="pt-3 flex flex-wrap items-center justify-center md:justify-start gap-4">
+            <a class="px-7 py-3 rounded-2xl font-bold text-sm tracking-wide bg-[#C86D51] text-white hover:bg-[#B65B3F] shadow-sm transition-all transform active:scale-95" href="#projects"> View My Projects </a>
+            <a class="px-7 py-3 rounded-2xl font-bold text-sm tracking-wide bg-[#E8D9C8] text-[#4A3B32] hover:bg-[#DECBB7] transition-all transform active:scale-95" href="#contact"> Contact Me </a>
+          </div>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+      <!-- BEGIN: AboutSection -->
+      <section class="space-y-8 scroll-mt-28" id="about">
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#3B2C24]">About Me</h2>
+        </div>
+        <!-- About Me Large Card -->
+        <div class="w-full max-w-4xl mx-auto bg-[#F7EFE5] border-2 border-[#E9DAC8] rounded-3xl p-8 sm:p-12 shadow-sm text-center">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-lg sm:text-xl text-[#5A483C] leading-relaxed"> I help customers find the right materials, tools, and supplies for their creative projects. My role includes providing friendly customer service, organizing craft products, maintaining an orderly shop, and assisting with product selection. I have an interest in arts and crafts, handmade creations, and practical DIY solutions, with a focus on making shopping convenient and enjoyable. Through attentive service, product knowledge, and efficient shop support, I aim to help customers bring their creative ideas to life. </p>
+        </div>
+      </section>
+      <!-- END: AboutSection -->
+      <!-- BEGIN: ProjectsSection -->
+      <section class="space-y-10 scroll-mt-28" id="projects">
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#3B2C24]">Projects</h2>
+        </div>
+        <!-- Exactly 3 Projects in a 3-column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <article class="craft-card bg-[#FFFFFF] border-2 border-[#EDE0D2] rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-full aspect-[4/3] overflow-hidden bg-[#EAE2D8]">
+                <img alt="Craft Project Ceramic Ware" class="w-full h-full object-cover" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F8a%2Fa7%2Fea%2F8aa7ea26d4c0e6172cf811d9648d2dae.jpg&f=1&nofb=1&ipt=3b234a8eeef6161e35200e2f5cacd8a14b2c9b935ff14d23d2d392ade80238a9&ipo=images" />
+              </div>
+              <div class="p-6 pb-2 space-y-3">
+                <!-- EDIT: Scrunchie Bouquet -->
+                <h3 class="text-xl font-bold text-[#3B2C24]">Scrunchie Bouquet</h3>
+                <!-- EDIT: A creative gift-wrapping concept that combines colorful scrunchies into an attractive, bouquet-style arrangement for birthdays, special occasions, and affordable gifting. This project highlights skills in craft assembly, color coordination, product presentation, and handmade gift design for a local gift shop. -->
+                <p class="text-[#68564B] text-base leading-relaxed">A creative gift-wrapping concept that combines colorful scrunchies into an attractive, bouquet-style arrangement for birthdays, special occasions, and affordable gifting. This project highlights skills in craft assembly, color coordination, product presentation, and handmade gift design for a local gift shop.</p>
+              </div>
+            </div>
+            <div class="p-6 pt-4">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block px-5 py-2.5 rounded-xl font-semibold text-sm bg-[#8A9A86] text-white hover:bg-[#788874] transition-colors" href="#"> Project Link </a>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="craft-card bg-[#FFFFFF] border-2 border-[#EDE0D2] rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-full aspect-[4/3] overflow-hidden bg-[#EAE2D8]">
+                <img alt="Craft Workshop Materials" class="w-full h-full object-cover" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.coplusk.net%2Fproject_images%2F191218%2Fimage%2F110545_2F2015-08-21-202502-Square6Boho2.0.jpg&f=1&nofb=1&ipt=43f8b8a6486bd2f3478c319d71b3c6d0acdbd57447bf0e8e2ab4cc7da68e2c66&ipo=images" />
+              </div>
+              <div class="p-6 pb-2 space-y-3">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-[#3B2C24]">String and Beadworks</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-[#68564B] text-base leading-relaxed">A handmade accessories project featuring simple string and bead crafts, such as bracelets, keychains, and decorative charms. It demonstrates creativity, attention to detail, material selection, and basic crafting techniques while exploring affordable, customizable gift ideas for customers.</p>
+              </div>
+            </div>
+            <div class="p-6 pt-4">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block px-5 py-2.5 rounded-xl font-semibold text-sm bg-[#8A9A86] text-white hover:bg-[#788874] transition-colors" href="#"> Project Link </a>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="craft-card bg-[#FFFFFF] border-2 border-[#EDE0D2] rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-full aspect-[4/3] overflow-hidden bg-[#EAE2D8]">
+                <img alt="Handmade Textiles and Craft Display" class="w-full h-full object-cover" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fbeautiful-greeting-cards-handcrafted-personalized_1268849-46024.jpg&f=1&nofb=1&ipt=0ed215a36e0ced84c4c8133161bad8de346fc7e4e3cafe1c5a285203c9bd5a4b&ipo=images" />
+              </div>
+              <div class="p-6 pb-2 space-y-3">
+                <!-- EDIT: Greeting Cards -->
+                <h3 class="text-xl font-bold text-[#3B2C24]">Greeting Cards</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-[#68564B] text-base leading-relaxed">A collection of handmade greeting card concepts featuring creative layouts, decorative elements, and thoughtful written messages for birthdays, celebrations, and everyday occasions. This project combines visual design, writing, and paper crafting to offer personalized, budget-friendly alternatives to mass-produced greeting cards.</p>
+              </div>
+            </div>
+            <div class="p-6 pt-4">
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block px-5 py-2.5 rounded-xl font-semibold text-sm bg-[#8A9A86] text-white hover:bg-[#788874] transition-colors" href="#"> Project Link </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- END: ProjectsSection -->
+      <!-- BEGIN: SkillsAndToolsSection -->
+      <section class="space-y-10 scroll-mt-28" id="skills">
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#3B2C24]">Skills and Tools</h2>
+        </div>
+        <!-- Exactly 2 Cards Side by Side -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Skills Card -->
+          <div class="bg-[#F6EFE6] border-2 border-[#E5D7C5] rounded-3xl p-8 shadow-sm">
+            <h3 class="text-2xl font-bold text-[#3B2C24] pb-4 mb-6 border-b-2 border-[#E7D6C1] text-center md:text-left"> Skills </h3>
+            <ul class="space-y-3.5 text-[#5C4A3E] text-base font-medium">
+              <!-- EDIT: SKILL_1 -->
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#C86D51]"></span> Creative Ideation and Direction
+              </li>
+              <!-- EDIT: SKILL_2 -->
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#C86D51]"></span> Handmade Gift Making and DIY Crafts
+              </li>
+              <!-- EDIT: SKILL_3 -->
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#C86D51]"></span> Gift Wrapping, Packaging, and Presentation
+              </li>
+            </ul>
+          </div>
+          <!-- Tools Card -->
+          <div class="bg-[#F6EFE6] border-2 border-[#E5D7C5] rounded-3xl p-8 shadow-sm">
+            <h3 class="text-2xl font-bold text-[#3B2C24] pb-4 mb-6 border-b-2 border-[#E7D6C1] text-center md:text-left"> Tools / Technologies </h3>
+            <ul class="space-y-3.5 text-[#5C4A3E] text-base font-medium">
+              <!-- EDIT: TOOL_1 -->
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#8A9A86]"></span> Cutting Tools, Glue Guns, Adhesives, and Craft Supplies
+              </li>
+              <!-- EDIT: TOOL_2 -->
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#8A9A86]"></span> Paper, Cardstock, and Lettering Tools
+              </li>
+              <!-- EDIT: TOOL_3 -->
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#8A9A86]"></span> Beads, Strings, Ribbons, and Decorative Materials
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END: SkillsAndToolsSection -->
+      <!-- BEGIN: ContactSection -->
+      <section class="space-y-8 scroll-mt-28" id="contact">
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-[#3B2C24]">Contact</h2>
+        </div>
+        <!-- Centered Contact Card -->
+        <div class="w-full max-w-2xl mx-auto bg-[#F7EFE5] border-2 border-[#E9DAC8] rounded-3xl p-8 sm:p-12 shadow-sm text-center space-y-4">
+          <!-- EDIT: YOUR_EMAIL -->
+          <p class="text-lg font-medium text-[#4A3B32]">sessionsphilippines@gmail.com</p>
+          <!-- EDIT: YOUR_CONTACT_INFO -->
+          <p class="text-lg font-medium text-[#4A3B32]">+639258468956</p>
+          <div>
+            <!-- EDIT: YOUR_SOCIAL_LINK -->
+            <a class="inline-block text-lg font-semibold text-[#C86D51] hover:underline underline-offset-4" href="#"> facebook.com/sesfilipinas </a>
+          </div>
+        </div>
+      </section>
+      <!-- END: ContactSection -->
+    </main>
+    <!-- BEGIN: Footer -->
+    <footer class="mt-20 border-t border-[#E8D9C8] bg-[#F4ECE1] py-8 text-center text-sm font-medium text-[#7C695C]"> ©2026 Krysha Lyn ALutaya De Juan. All rights reserved. </footer>
+    <!-- END: Footer -->
+  </body>
+</html>
